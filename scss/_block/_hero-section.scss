@@ -1,0 +1,66 @@
+.hero-section{
+    background-color: aquamarine;
+
+
+    .hero{
+
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        &__logoo{
+            padding: 10px 0;
+        }
+
+        &__list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__item{
+            margin-left: 40px;
+
+
+            &__links{
+                color: black;
+                font-size: 23px;
+            }
+
+        }
+
+
+
+        &__btn{
+            padding: 10px 40px;
+        }
+
+        &__menu{
+            display: none;
+            font-size: 23px;
+            
+        }
+
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section{
+
+        .hero{
+
+            &__list{
+                flex-wrap: wrap ;
+
+            }
+
+            &__menu{
+                flex-direction: column;
+            }
+
+        }
+    }
+}
